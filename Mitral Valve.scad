@@ -5,7 +5,7 @@ module OuterCase(innerR){
     difference(){
         cylinder(h=2,r=5, center=true);
         cylinder(h=2,r=innerR,center=true);
-        cube([4,8.6,4],center=true);
+        cube([4,8.6,1.6],center=true);
         rotate(a=90, v=[1,0,0]){
             translate([-1,0,-4.2]){
                 cylinder(h=1,r=.3,center=true);
@@ -82,6 +82,7 @@ module Leaflet1(rad,thickness){
        }
    }
 }
+
 //Drawing Objects
 OuterCase(4.3);
 SutureRing(5,1.4,.6);
