@@ -1,4 +1,4 @@
-$fn=100;
+$fn=200;
 
 //Creating Outer Case
 module OuterCase(innerR,height){
@@ -55,6 +55,9 @@ module Leaflet1(rad,thickness){
            translate([rad,0,0]){
                cube([2*rad,2*rad,thickness],center=true);
            }
+           rotate([90,90,0]){
+               translate([-.6,0,0]){
+                   cylinder(r=.8,h=10,$fn=3,center=true);}}
        }
        rotate(a=90, v=[1,0,0]){
             translate([-1,0,4.2]){
@@ -66,6 +69,7 @@ module Leaflet1(rad,thickness){
                 cylinder(h=1,r=.2,center=true);
                 }
             }
+
     }
 }
 
@@ -77,6 +81,9 @@ module Leaflet2(rad,thickness){
            translate([-rad,0,0]){
                cube([2*rad,2*rad,thickness],center=true);
            }
+           rotate([90,90,0]){
+               translate([-.6,0,0]){
+                   cylinder(r=.8,h=10,$fn=3,center=true);}}
        }
        rotate(a=90, v=[1,0,0]){
             translate([1,0,4.2]){
@@ -88,6 +95,7 @@ module Leaflet2(rad,thickness){
                 cylinder(h=1,r=.2,center=true);
                 }
             }
+
     }
 }
 //Drawing Objects
