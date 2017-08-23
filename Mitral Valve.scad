@@ -11,7 +11,7 @@ module OuterCase(innerR,height){
         }
         rotate(a=90, v=[1,0,0]){
             translate([-1,0,-4.2]){
-                cylinder(h=1,r=.3,center=true);
+                cylinder(h=1    ,r=.3,center=true);
             }
         }
         rotate(a=90, v=[1,0,0]){
@@ -102,4 +102,4 @@ module Leaflet2(rad,thickness){
 OuterCase(4.3,1.5);
 SutureRing(5,1.4,.6,30);
 Leaflet1(4.3,.5);
-Leaflet2(4.3,.5);
+Leaflet2(4.3,1);
